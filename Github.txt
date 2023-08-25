@@ -1,0 +1,51 @@
+Github: Github is a website where you can store you code and edit code at the website
+
+
+Git: Git is a version control system. Git is used to store the history or snapshot of your code.
+
+Configuring Git : It means we can setup our name and email id which we can use these to fork our file from git to Github
+
+---> git config --global  user.name "Suraj" //use github name
+---> git config --global  user.email "mouryasuraj@gmail.com"   //use github email id
+
+git config --list   //It will shwo the credential details like name and email
+
+
+Clone and Status
+
+Clone: Cloning a repository on our local machine
+
+-->git clone "somelink"  //Don't use double quotes when Cloning. Just paste or write the link which you have to clone
+eg: git clone https://github.com/mouryasuraj/Git_and_Github.git
+
+Status:display the state of the code
+
+-->git status
+
+
+Add and Commit
+
+add: adds new or changed files in your working directory to the git staging area
+
+-->git add "file name"
+eg: git add index.html or if  you want to add all the new or changed file to the staging area then use -->git add .  //'.' means all the files
+
+Commit: it is the record of change
+-->git commit -m "some message"
+eg: -->git commit -m "Chaged the index.html"
+ 
+
+
+(U)untracked: new files that git doesn't yet track
+(M)modified: changed
+(S)staged : file is ready to be committed
+unmodified: unchanged
+
+
+
+
+Commands you must know:
+cd -- change directory
+ls -- list all the files and folders in the current directory
+ls -a -- list all files hidden and non-hidden 
+clear
