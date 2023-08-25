@@ -39,6 +39,61 @@ push Command
 push: upload local repo content to remote repo 
 -->git push origin main
 
+init Command
+git init: used to create a new git repository
+
+    git init
+    git remote add origin https://github.com/mouryasuraj/LocalRepo.git
+    git remote -v   //It used to verify remote
+    git branch      //to check current branch
+    git branch -M main  //to rename branch
+    git push origin main
+    git push -u origin main  //here -u define that 'to set upstream' it means that if we want to push the changes to the same branch and same origin then we don't have to write 'git push origin main' instead we can use only 'git push'
+
+
+branch Commands
+    git branch  -- to check current branch
+    git branch -M branch_name --- to remane branch
+    git checkout branch_name  ---to change the branch(to navigate)
+    git checkout -b branch_name ---to create new branch and navigate to the new branch
+    git branch -d branch_name --- to delete the branch. Note:You are not able to delete branch when you are on that branch. So first change the branch and then delete it.
+
+Merging code
+
+Way1 (through git)
+git diff branch_name     ---to compare commit and branches, files and more
+git merge branch_name    --to merge 2 branches
+
+way2 (through Github)
+create a pull request(PR)
+pull request: It lets you tell others about changes you've pushed to a branch in a repository on Github
+
+pull Command
+--> git pull origin main
+
+pull: Used to fetch and downlad content from a remote repository and immediately update the local repository to match that content
+
+
+
+Resolving Merge COnflicts:
+An event that takes place when git is unable to automatically resolve differences in code between two commits.
+
+
+Undoing changes
+case1: staged chnages
+    git reset index.html
+    git reset
+
+case2: committed changes(for one commit)
+    git reset HEAD~1
+
+case3: commited changes(for many commites)
+    git reset 9458b226c36b1e1495d30a378e1b024b83b2e730(hash)
+    git reset --hard 9458b226c36b1e1495d30a378e1b024b83b2e730
+
+
+Fork: A fork is a new repository that shares code and visibility setting with the original "upstream" repository
+Forl is a rough copy.
 
 
 (U)untracked: new files that git doesn't yet track
@@ -54,3 +109,4 @@ cd -- change directory
 ls -- list all the files and folders in the current directory
 ls -a -- list all files hidden and non-hidden 
 clear
+mkdir
