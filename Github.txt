@@ -37,7 +37,7 @@ eg: -->git commit -m "Chaged the index.html"
 
 push Command
 push: upload local repo content to remote repo 
--->git push origin master
+-->git push origin main
 
 
 
