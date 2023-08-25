@@ -11,7 +11,7 @@ Configuring Git : It means we can setup our name and email id which we can use t
 git config --list   //It will shwo the credential details like name and email
 
 
-Clone and Status
+Clone and Status Command
 
 Clone: Cloning a repository on our local machine
 
@@ -23,7 +23,7 @@ Status:display the state of the code
 -->git status
 
 
-Add and Commit
+Add and Commit Command
 
 add: adds new or changed files in your working directory to the git staging area
 
@@ -34,6 +34,11 @@ Commit: it is the record of change
 -->git commit -m "some message"
 eg: -->git commit -m "Chaged the index.html"
  
+
+push Command
+push: upload local repo content to remote repo 
+-->git push origin master
+
 
 
 (U)untracked: new files that git doesn't yet track
