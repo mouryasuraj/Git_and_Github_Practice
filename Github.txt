@@ -56,8 +56,8 @@ branch Commands
     git branch -M branch_name --- to remane branch
     git checkout branch_name  ---to change the branch(to navigate)
     git checkout -b branch_name ---to create new branch and navigate to the new branch
-    git branch -d branch_name --- to delete the branch. Note:You are not able to delete branch when you are on that branch. So first change the branch and then delete it.(Note: When you try to delete rmeote branch then you must check that the branch you are trying to delete is not the default branch. If it is default branch then you wil get error: ![remote rejected])
-    git push origin -d branch_name ---to delete remote branch we have to use this command
+    git branch -d branch_name --- to delete the branch. Note:You are not able to delete branch when you are on that branch. So first change the branch and then delete it.
+    git push origin -d branch_name ---to delete remote branch we have to use this command.(Note: When you trying to delete remote branch then you must check that the branch you are trying to delete is not the default branch. If it is a default branch then you have to change the branch, else you wil get an error: ![remote rejected])
     git branch -a ----It is will show all the branches (local + remote)
 
 Merging code
